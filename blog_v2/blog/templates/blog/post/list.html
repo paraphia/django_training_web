@@ -8,6 +8,7 @@
 			</h2>
 			<p class="date">Publish {{post.publish}} by {{post.auhtor}}</p>
 			{{ post.body|truncatewords:20|linebreaks}}
+			<hr>
 	{% endfor %}
 
 	{% include "pagination.html" with page=page_obj %}
